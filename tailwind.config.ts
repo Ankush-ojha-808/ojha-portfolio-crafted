@@ -26,6 +26,9 @@ export default {
         secondary: {
           DEFAULT: '#222235',
         },
+        border: {
+          DEFAULT: '#e2e8f0', // Adding border color
+        },
       },
       backgroundImage: {
         'card-gradient': 'linear-gradient(135deg,#181c2e 0%,#242640 100%)',
