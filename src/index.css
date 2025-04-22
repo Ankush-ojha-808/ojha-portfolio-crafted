@@ -5,64 +5,37 @@
 
 @layer base {
   :root {
-    --background: 222 100% 97%;            /* Soft light-blue */
-    --foreground: 237 42% 13%;             /* Very dark blue for headings/text */
+    --background: 0 0% 100%;           /* Pure white */
+    --foreground: 222 42% 16%;          /* Very dark blue for text */
     --card: 0 0% 100%;
-    --card-foreground: 237 42% 13%;
+    --card-foreground: 222 42% 16%;
     --popover: 0 0% 100%;
-    --popover-foreground: 237 42% 13%;
+    --popover-foreground: 222 42% 16%;
 
-    --primary: 255 90% 64%;                /* Vivid blue */
+    --primary: 255 90% 64%;             /* Vivid blue */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 273 50% 94%;              /* Soft lavender */
-    --secondary-foreground: 237 42% 13%;
+    --secondary: 273 50% 94%;           /* Soft lavender */
+    --secondary-foreground: 222 42% 16%;
 
-    --muted: 228 24% 87%;                  /* Soft gray-blue */
-    --muted-foreground: 237 16% 38%;
+    --muted: 228 24% 87%;               /* Soft gray-blue */
+    --muted-foreground: 222 16% 38%;
 
-    --accent: 266 89% 70%;                 /* Modern purple (high impact) */
+    --accent: 266 89% 70%;              /* Modern purple */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 235 33% 92%;                 /* Pale blue-gray */
+    --border: 235 33% 92%;              /* Pale blue-gray */
     --input: 235 33% 92%;
     --ring: 255 90% 64%;
 
-    --radius: 0.85rem;                     /* Slightly more rounded for card corners */
+    --radius: 0.85rem;
   }
 
-  .dark {
-    --background: 237 46% 10%;             /* Deep dark blue */
-    --foreground: 0 0% 98%;
-
-    --card: 237 46% 14%;
-    --card-foreground: 0 0% 98%;
-    --popover: 237 46% 14%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 224 100% 65%;               /* Vibrant blue */
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 273 41% 22%;              /* Deep purple */
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 237 31% 18%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 266 80% 70%;                 /* Bright modern purple */
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 356 85% 54%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 237 32% 21%;                 /* Muted blue-gray border */
-    --input: 237 32% 21%;
-    --ring: 224 100% 65%;
-
-    --radius: 0.85rem;
+  body {
+    @apply bg-gradient-to-br from-[#f7faff] via-[#e6e8fe] to-[#e1ebe8] text-foreground antialiased;
   }
 }
 
@@ -71,18 +44,4 @@
     @apply border-border/60;
     transition: background 0.25s, color 0.25s, border-color 0.2s;
   }
-  body {
-    @apply bg-gradient-to-br from-[#f7faff] via-[#e6e8fe] to-[#e1ebe8] text-foreground antialiased;
-  }
 }
-
-@layer utilities {
-  /* Subtle hover and focus */
-  .hover-scale {
-    @apply transition-transform duration-200 hover:scale-105;
-  }
-  .story-link {
-    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-[-2px] after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
-  }
-}
-

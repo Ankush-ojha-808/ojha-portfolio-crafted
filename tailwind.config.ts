@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -55,8 +54,8 @@ export default {
         },
       },
       backgroundImage: {
-        'card-gradient': 'linear-gradient(135deg,#f7faff 0%,#e6e8fe 50%,#e1ebe8 100%)',
-        'section-gradient': 'linear-gradient(135deg,#f7faff 0%,#e6e8fe 100%)',
+        'card-gradient': 'linear-gradient(135deg, #f7faff 0%, #e6e8fe 50%, #e1ebe8 100%)',
+        'section-gradient': 'linear-gradient(135deg, #f7faff 0%, #e6e8fe 100%)',
       },
       boxShadow: {
         glass: '0 4px 32px 0 rgba(80,63,205,0.09)',
@@ -84,4 +83,3 @@ export default {
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
-
