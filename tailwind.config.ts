@@ -42,7 +42,8 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: '#9b87f5',
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -54,11 +55,11 @@ export default {
         },
       },
       backgroundImage: {
-        'card-gradient': 'linear-gradient(135deg,#181c2e 0%,#242640 100%)',
-        'section-gradient': 'linear-gradient(135deg,#13131a 0%,#232546 100%)',
+        'card-gradient': 'linear-gradient(135deg,#f7faff 0%,#e6e8fe 50%,#e1ebe8 100%)',
+        'section-gradient': 'linear-gradient(135deg,#f7faff 0%,#e6e8fe 100%)',
       },
       boxShadow: {
-        glass: '0 4px 32px 0 rgba(80,63,205,0.16)',
+        glass: '0 4px 32px 0 rgba(80,63,205,0.09)',
       },
       animation: {
         'fade-in': 'fade-in 0.5s ease',
@@ -74,7 +75,13 @@ export default {
           '100%': { transform: 'scale(1.05)' },
         },
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
+
