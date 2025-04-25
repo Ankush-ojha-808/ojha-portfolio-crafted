@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Star } from "lucide-react";
 
@@ -10,14 +9,14 @@ const achievements = [
 ];
 
 const AchievementList: React.FC = () => (
-  <ul className="space-y-3">
+  <ul className="space-y-4">
     {achievements.map((ach) => (
       <li
         key={ach}
-        className="flex items-center bg-gradient-to-r from-[#13131a] to-[#232546] rounded-lg px-4 py-2 shadow-glass"
+        className="flex items-center bg-gradient-to-r from-purple-700 via-pink-600 to-red-500 text-white rounded-xl px-5 py-3 shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out"
       >
-        <Star className="text-accent mr-2" size={17} />
-        <span>{ach}</span>
+        <Star className="text-yellow-300 mr-3 shrink-0" size={18} />
+        <span className="text-sm font-medium">{ach}</span>
       </li>
     ))}
   </ul>
