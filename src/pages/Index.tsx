@@ -56,7 +56,7 @@ const Index = () => {
               Ankush Kumar Ojha
             </h1>
             <h2 className="text-md md:text-xl text-foreground/90 mb-4 text-center font-medium">
-              Aspiring Software Developer | Data Science Enthusiast | Software Developer
+              Aspiring Software Developer | Data Science Enthusiast | Software Full-stack Developer
             </h2>
             <p className="text-foreground/75 max-w-lg text-center mb-5">
               B.Tech student specializing in Data Science at Lovely Professional University.
