@@ -21,7 +21,7 @@ const ContactForm: React.FC = () => {
     <div className="bg-gradient-to-br from-[#1f1f2e] via-[#2d2f5a] to-[#181a2c] rounded-3xl p-8 shadow-xl w-full max-w-2xl mx-auto text-white">
       <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block mb-1 text-sm font-medium text-white/90">my name</label>
+          <label className="block mb-1 text-sm font-medium text-white/90">my naeme</label>
           <input
             className="w-full p-3 rounded-lg bg-white/10 border border-white/20 placeholder-white/60 text-white focus:outline-none focus:ring-2 focus:ring-violet-500"
             required
