@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="w-full fixed top-0 left-0 z-30 bg-white/80 dark:bg-[#13131a]/80 backdrop-blur border-b border-border font-inter">
       <nav className="container flex items-center justify-between py-2">
-        <span className="text-xl font-bold tracking-tight text-accent">Ankush Kumar Ojha</span>
+        <span className="text-xl font-bold tracking-tight text-accent">Shubham Singh</span>
         <ul className="hidden md:flex gap-7 text-[15px] font-medium items-center">
           {NAV_LINKS.map((link) => (
             <li key={link.id}>

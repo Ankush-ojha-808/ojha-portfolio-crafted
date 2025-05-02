@@ -53,7 +53,7 @@ const Index = () => {
         <Section id="home">
           <div className="flex flex-col items-center animate-fade-in">
             <h1 className="text-3xl md:text-5xl font-bold text-accent text-center mb-3">
-              Ankush Kumar Ojha
+              Shubham Singh
             </h1>
             <h2 className="text-md md:text-xl text-foreground/90 mb-4 text-center font-medium">
               Aspiring Software Developer | Data Science Enthusiast | Software Developer | AI-ML Engineer.
